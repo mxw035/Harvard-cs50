@@ -1,0 +1,22 @@
+sort1 uses: Bubble sort
+
+
+
+How do you know?: Because it is the longest times but also at times the shortest and is variable.
+
+
+
+sort2 uses: Merge sort
+
+
+
+How do you know?: Because it is almost always the shortest but ocassionally is longer than sort 1 or bubble sort.
+
+
+
+sort3 uses: Selection sort
+
+
+
+How do you know?: It takes very similar times no matter if it is sorted, randomized or reversed for all three text sizes and takes longer than sort 2 or
+merge sort.
