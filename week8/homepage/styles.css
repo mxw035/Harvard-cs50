@@ -1,0 +1,71 @@
+body {
+    background-color:black;
+    color:white;
+    text-align:center;
+}
+h1 {
+    background-color:purple;
+}
+h2 {
+    background-color:green;
+}
+h3 {
+    background-color:blue;
+}
+h4 {
+    background-color:orange;
+}
+h5 {
+    background-color:maroon;
+}
+.me {
+    background-color:purple;
+    color:white;
+    border-radius:12px;
+    text-align:center;
+}
+.job {
+    background-color:green;
+    color:white;
+    border-radius:12px;
+    text-align:center;
+}
+.fav {
+    background-color:blue;
+    color:white;
+    border-radius:12px;
+    text-align:center;
+}
+.hobbies {
+    background-color:orange;
+    color:white;
+    border-radius:12px;
+    text-align:center;
+}
+.main {
+    background-color:purple;
+    color:white;
+    border-radius:12px;
+    text-align:center;
+}
+.links {
+    background-color:tomato;
+    color:white;
+}
+.books {
+    text-align:left;
+}
+.hob {
+    background-color:maroon;
+}
+.hobul {
+    list-style-type:none;
+}
+.pic {
+    width:20%;height:20%;
+}
+.mac {
+    width:20%;height:20%;
+    title='macreme';
+
+}
