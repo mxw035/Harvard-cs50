@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>Vicotria Alexander</title>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, width=device-width">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<style>
+  .natures {display: middle}
+</style>
+<body>
+<nav class="w3-bar"> 
+<button class="w3-bar-item w3-button w3-round "><a href="index.html">Home</a></button>
+<button class="w3-bar-item w3-button w3-round"><a href="about.html">About</a></button>
+<button class="w3-bar-item  w3-button w3-round "><a href="art.html">Art</a></button>
+<button class="w3-bar-item w3-button w3-round"><a href="contact.html">Contact</a></button>
+<button class="w3-bar-item w3-button w3-round"><a href="prints.html">Print</a></button>
+<button class="w3-bar-item w3-button w3-round"><a href="video.html">Videos</a></button>
+<button class="w3-bar-item w3-button w3-round"><a href="guest.html">Guest </a></button>
+</nav>
+  
+<main>
+<nav class="w3-bar">
+   <button class="w3-bar-item w3-button w3-round"><a href="themes.html">Themes</a></button>
+</nav>
+<a href="index.html">  
+<header class= "w3-jumbo w3-cursive w3-center">Victoria Alexander</header>
+</a>
+<h2 class="w3-center">Nature</h2>
+
+<div class="w3-content w3-display-container w3-half w3-left">
+  <img class="natures" src="n1.jpg" style="width:100%">
+  <img class="natures" src="n2.jpg" style="width:100%">
+  <img class="natures" src="n3.jpg" style="width:100%">
+  <img class="natures" src="n4.jpg" style="width:100%">
+  <img class="natures" src="n5.jpg" style="width:100%">
+  <img class="natures" src="n6.jpg" style="width:100%">
+  <img class="natures" src="n7.jpg" style="width:100%">
+  <img class="natures" src="n9.jpg" style="width:100%">
+  <img class="natures" src="n10.jpg" style="width:100%">
+  
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("natures");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<div class="w3-content w3-display-container w3-half w3-right">
+  <img class="w3-image" src="Nature.jpg" alt="Art by Victoria" width="100%">
+  </div>
+  
+</body>
+</html>
