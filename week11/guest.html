@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title><meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, width=device-width">
+<link rel="stylesheet" href="stylesheet.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  .art {display: middle}
+</style>
+</head>
+
+<body>
+<nav class="w3-bar">
+  <button class="w3-bar-item w3-button w3-round"><a href="index.html">Home</a></button>
+<button class="w3-bar-item w3-button w3-round"><a href="about.html">About</a></button>
+<button class="w3-bar-item w3-button w3-round"><a href="art.html">Art</a></button>
+<button class="w3-bar-item w3-button w3-round"><a href="contact.html">Contact</a></button>
+<button class="w3-bar-item w3-button w3-round"><a href="prints.html">Print</a></button>
+  <button class="w3-bar-item w3-button w3-round"><a href="video.html">Videos</a></button>
+   <button class="w3-bar-item w3-button w3-round"><a href="guest.html">Guest </a></button>
+
+  </nav>
+<main>
+  
+  <nav class="w3-bar">
+ <button class="w3-bar-item w3-button w3-round"><a href="themes.html">Themes</a></button>
+</nav>
+  
+<header class="w3-jumbo w3-cursive w3-center">Guest Artist</header>
+  <h1>Monica Evans</h1>
+  <div class="w3-third">
+    <div class="w3-center">
+    Monica Evans
+    <p>Flagstaff, AZ</p>
+    <p>mxw035@gmail.com</p>
+    <img class="w3-image" src="Monica.JPG" alt="Photo of Guest artist" width="50%">
+    </div>
+  </div>
+  
+  <div class="w3-third">
+    Guest's Art
+     <img class="art w3-image" src="guest1.jpg" width="100%" alt="Guest Art" >
+     <img class="art w3-image" src="guest2.jpg" width="100%" alt="Guest Art" >
+     <img class="art w3-image" src="guest3.jpg" width="100%" alt="Guest Art" >
+     <img class="art w3-image" src="guest4.jpg" width="100%" alt="Guest Art" >
+     <img class="art w3-image" src="guest5.jpg" width="100%" alt="Guest Art" >
+     <img class="art w3-image" src="guest6.jpg" width="100%" alt="Guest Art" >
+     <img class="art w3-image" src="guest7.jpg" width="100%" alt="Guest Art" >
+     <img class="art w3-image" src="guest8.jpg" width="100%" alt="Guest Art" >
+     <img class="art w3-image" src="guest9.jpg" width="100%" alt="Guest Art" >
+     <img class="art w3-image" src="guest10.jpg" width="100%" alt="Guest Art" >
+     <img class="art w3-image" src="guest11.jpg" width="100%" alt="Guest Art" >
+     <img class="art w3-image" src="guest12.jpg" width="100%" alt="Guest Art" >
+     <img class="art w3-image" src="guest13.jpg" width="100%" alt="Guest Art" >
+     <img class="art w3-image" src="guest14.jpg" width="100%" alt="Guest Art" >
+     <img class="art w3-image" src="guest15.jpg" width="100%" alt="Guest Art" >
+     <img class="art w3-image" src="guest16.jpg" width="100%" alt="Guest Art" >
+     <img class="art w3-image" src="guest17.jpg" width="100%" alt="Guest Art" >
+     <img class="art w3-image" src="guest18.jpg" width="100%" alt="Guest Art" >
+     <img class="art w3-image" src="guest19.jpg" width="100%" alt="Guest Art" >
+     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+     <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+  
+  <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("art");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+  
+  <div class="w3-third">
+    About Guest 
+    <div class="w3-half">
+      Past 
+      <p>I have enjoyed creating various artfroms since childhood including music, paintings, oil pastel drawings and now website design. I have really enjoyed 
+      creating this site.</p>
+    </div>
+    <div class="w3-half">
+      Future
+      <p>The furture is still an open book. I plan to enjoy time with my husband, son and Flagstaff family while learning more about computer programing and computer
+      languages. This season I plan to ski and enjoy the great outdoors as much as possible while still creating in whatever form it takes. </p>
+      <a href="#">Webpage</a>
+    </div>
+  </div>
+  
+</main>  
+
+
+</body>
+</html>
