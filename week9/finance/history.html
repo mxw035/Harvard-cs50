@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table>
+        <thead>
+            <tr>
+                <th class = "th1">Name</th>
+                <th class = "th2">Symbol</th>
+                <th class = "th3">Price</th>
+                <th class = "th4">Value</th>
+                <th class = "th5">Action</th>
+                <th class = "th6">Shares</th>
+                <th class = "th7">Date</th>
+                <th class = "th8">Bought</th>
+                <th class = "th9">sold</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for history in history %}
+            <tr>
+                <td class = "td1">{{history.name}}</td>
+                <td class = "td2">{{history.symbol}}</td>
+                <td class = "td1">{{history.price | usd}}</td>
+                <td class = "td2">{{history.value | usd}}</td>
+                <td class = "td1">{{history.action}}</td>
+                <td class = "td2">{{history.shares}}</td>
+                <td class = "td1">{{history.date}}</td>
+                <td class = "td2">{{history.bought}}</td>
+                <td class = "td1">{{history.sold}}</td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

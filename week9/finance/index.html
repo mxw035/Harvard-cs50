@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <p>Name: {{name}}</p>
+    <table>
+        <thead>
+            <tr>
+                <th class="th1">Name</th>
+                <th class="th2">Symbol</th>
+                <th class="th3">Shares</th>
+                <th class="th4">Price</th>
+                <th class="th5">Value</th>
+                <th class="th6">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for index in index %}
+            <tr>
+                <td class = "td1">{{index.name}}</td>
+                <td class = "td2">{{index.symbol}}</td>
+                <td class = "td1">{{index.shares}}</td>
+                <td class = "td2">{{index.price | usd}}</td>
+                <td class = "td1">{{index.value | usd}}</td>
+                <td class = "td2">{{index.action}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p class = "cash">Cash: {{cash | usd}}</p>
+    <p>Stock Total: {{total | usd}}</p>
+    <p>Grand: {{grand | usd}}</p>
+
+
+{% endblock %}

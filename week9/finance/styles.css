@@ -1,0 +1,101 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+main .form-control
+{
+    /* Center form controls */
+    display: inline-block;
+
+    /* Override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* Scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* Center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* Constrain images on small screens */
+    max-width: 100%;
+}
+.th1 {
+    background-color:red;
+    color:white;
+}
+.th2 {
+    background-color:orange;
+    color:white;
+}
+
+.th3 {
+    background-color:green;
+    color:white;
+}
+.th4 {
+    background-color:blue;
+    color:white;
+}
+.th5 {
+    background-color:indigo;
+    color:white;
+}
+.th6 {
+    background-color:violet;
+    color:white;
+}
+.th7 {
+    background-color:red;
+    color:white;
+}
+.th8 {
+    background-color:orange;
+    color:white;
+}
+
+.th9 {
+    background-color:green;
+    color:white;
+}
+.td1 {
+    background-color:lightblue;
+}
+.td2 {
+    background-color:lightgreen;
+}
+.cash {
+    background-color:gold;
+    color:white;
+    border-radius:12px;
+}
+p {
+    background-color:teal;
+    color:white;
+    border-radius:12px;
+}
